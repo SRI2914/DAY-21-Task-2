@@ -1,0 +1,36 @@
+body{
+    background:linear-gradient(to right,rgb(255, 166, 0),white,green);
+}
+
+
+.heading{text-align: center;margin-top:10px; }
+
+.display-data{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    gap:20px;
+    
+}
+
+.spacecraft-card{
+    width : 400px;
+    border-radius: 25px;
+    border: 1px solid black;
+    font-weight: bolder;
+    background-color:rgba(255, 255, 255, 0.505);
+    box-shadow: 10px 10px 10px rgba(0, 128, 119, 0.362);
+    margin: auto;
+}
+
+/*changing the properties based on screen size for responsiveness using media query*/
+@media screen and (max-width:768px){
+    .display-data{
+        flex-direction: column;
+    }
+
+    .spacecraft-card{
+        width:300px;
+    }
+}
